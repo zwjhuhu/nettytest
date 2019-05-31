@@ -12,12 +12,11 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jdklevel>1.7</jdklevel>
+		<jdklevel>1.8</jdklevel>
 		<maven.test.skip>true</maven.test.skip>
 		<rep.url>192.168.100.231:8080</rep.url>
-		<guava.version>15.0</guava.version>
 	</properties>
-
+<!-- 
 	<repositories>
 		<repository>
 			<id>nexus-repo</id>
@@ -44,18 +43,18 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
+ -->
 	<dependencies>
 		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty-all</artifactId>
-			<version>4.0.23.Final</version>
+			<version>4.1.33.Final</version>
 		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>4.12</version>
 		</dependency>
 
 	</dependencies>
@@ -95,6 +94,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
@@ -114,6 +114,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			 -->
 		</plugins>
 
 		<pluginManagement>
